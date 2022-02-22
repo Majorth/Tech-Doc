@@ -1,18 +1,109 @@
 *{
     box-sizing: border-box;
+    
 }
 body{
-   /* line-spacing:1.5px;*/
-   font-family: 'Times New Roman', Times, serif;
+   line-height: 1.5;
+   font-family: sans-serif;
+   font-size: 20px;
+   background-color: antiquewhite;
+  
+   
 }
+nav{
+    display: block;
+   
+}
+.navheader{
+    font-size: 28px;
+    margin: 10px 20px; 
+   
+}
+#navbar{
+    position: fixed;
+    min-width: 290px;
+    top:0px;
+    left:0px;
+    width:320px;
+    height: 100%;
+    border-right: solid rgba(0,22,22,0.4);
+    
+}
+#navbar li{
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    /*position: relative;*/
+    width: 100%;
+    
+}
+li{
+    display: list-item;
+   /* text-align: -webkit-match-parent;*/
+     
+}
+a:link{text-decoration:none;}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+a:active{text-decoration: none;}
+a{color: black}
+
+
+main{
+    position: absolute;
+    margin-left: 330px;
+    padding:20px;
+    margin-bottom: 110px;
+    display: block;
+}/*position absolute is probably not necessay. don't use the id to move the main section.*/
+
 header{
     font-size: 44px;
     font-weight: 800;
+    display: block;
 }
 .subheader{
     font-size: 32px;
-    font-weight:400
+    font-weight:500
 }
 p{
-    margin: auto;
+    display: block;
+    width: 60vw;
+
 }
+.grids-inspector, img{
+    width:900px;
+    height:600px;
+    margin: 20px 0 20px 0;
+}
+.container {
+    border-radius: 5px;
+    padding:10px;
+    background-color: rgb(207,232,220);
+    border:2px solid rgb(79,185,227);
+}
+.main-page-content iframe{
+    max-width: 100%;
+
+}
+.sample-code-frame{
+    border:1px solid #0072be;
+    border-left: 6px solid #005282;
+    margin: 0 0 12px;
+    padding: 12px;
+    width: 100%;
+}/*container through sample code frame are for the inset html*/
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding:15px;
+    margin:10px;
+    border-radius: 5px;
+}/*simple way to inject code into a document versus separating every character and word with token.*/
+
